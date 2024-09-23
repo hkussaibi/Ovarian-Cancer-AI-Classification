@@ -16,7 +16,7 @@ Torchvision normalizing function:
 </details>
 ## Features extraction:
 <details>
-<summary>Click to view the code</summary>
+  <summary>Click to view the code</summary>
 ```
 ResNet50
 ```
@@ -24,14 +24,14 @@ ResNet50
 ## Training Process:
 ### NN-based classifier
 <details>
-<summary>Click to view the code</summary>
+  <summary>Click to view the code</summary>
 ```
 nn
 ```
 </details>
 ### lightGBM
 <details>
-<summary>Click to view the code</summary>
+  <summary>Click to view the code</summary>
 ```
 GBM
 ```
