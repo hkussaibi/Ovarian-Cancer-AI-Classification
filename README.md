@@ -8,31 +8,29 @@ Sixty-four (20x) whole slide images (WSIs) from the Cancer Imaging Archive and 1
 First, using QuPath, pathologists annotated tumor regions of interest (ROIs) on the WSIs, and then tiles of size (224 x 224 pixels) were cropped from those ROIs. 
 ## Pre-processing Techniques
 Torchvision normalizing function:
-<details>
-  <summary>Click to view the code</summary>
+
 ```
 (transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]))  
 ```
-</details>
+
 ## Features extraction:
-<details>
-  <summary>Click to view the code</summary>
+
 ```
 ResNet50
 ```
-</details>
+
 ## Training Process:
+```
+Training Loop here
+```
 ### NN-based classifier
-<details>
-  <summary>Click to view the code</summary>
+
 ```
 nn
 ```
-</details>
+
 ### lightGBM
-<details>
-  <summary>Click to view the code</summary>
+
 ```
 GBM
 ```
-</details>
