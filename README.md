@@ -24,3 +24,11 @@ nn
 ```
 GBM
 ```
+<details>
+  <summary>Click to view the code</summary>
+
+```python
+def example():
+    print("This is a collapsible code region")` 
+```
+</details>
