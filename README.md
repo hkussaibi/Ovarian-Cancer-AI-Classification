@@ -199,10 +199,10 @@ print("LightGBM Accuracy:", lgb_accuracy)
 accuracy = accuracy_score(y_test, lgb_predictions.argmax(axis=1))
 print('Accuracy:', accuracy)
 ```
-For more information, see the original study: 10.1101/2024.06.05.24308520.
+For more information, see the original study: [10.1101/2024.06.05.24308520](https://doi.org/10.1101/2024.06.05.24308520 ).
 
 If you wish to reuse any of the codes mentioned above, please ensure to cite the original manuscript accordingly.
-
+```
 @article {Kussaibi2024.06.05.24308520,
 	author = {Kussaibi, Haitham and Alibrahim, Elaf and Alamer, Eman and Alhaji, Ghada and Alshehab, Shrooq and Shabib, Zahraa and Alsafwani, Noor and Meneses, Ritesh G.},
 	title = {Al-Powered classification of Ovarian cancers Based on Histopathological lmages},
@@ -214,5 +214,5 @@ If you wish to reuse any of the codes mentioned above, please ensure to cite the
 	eprint = {https://www.medrxiv.org/content/early/2024/06/06/2024.06.05.24308520.full.pdf},
 	journal = {medRxiv}
 }
-
+```
 © 2024 anapath.org This code is made available under the Apache-2 License and is available for non-commercial academic purposes.
