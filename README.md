@@ -5,7 +5,38 @@ MEDRXIV/2024/308520
 ## Dataset Preparation and Pre-processing
 Sixty-four (20x) whole slide images (WSIs) from the Cancer Imaging Archive and 18 WSIs from KFHU.
 ## Extract tiles from the WSIs: 
-First, using QuPath, pathologists annotated tumor regions of interest (ROIs) on the WSIs, and then tiles of size (224 x 224 pixels) were cropped from those ROIs. 
+First, using QuPath, pathologists annotated tumor regions of interest (ROIs) on the WSIs, and then tiles of size (224 x 224 pixels) were cropped from those ROIs.
+```
+/**
+ * Script to export image tiles (can be customized in various ways).
+ */
+
+// Get the current image (supports 'Run for project')
+def imageData = getCurrentImageData()
+
+// Define output path (here, relative to project)
+def name = GeneralTools.stripExtension(imageData.getServer().getMetadata().getName())
+def pathOutput = buildFilePath(PROJECT_BASE_DIR, 'tiles', name)
+mkdirs(pathOutput)
+
+// Define output resolution in calibrated units (e.g. µm if available)
+double requestedPixelSize = 5.0
+
+// Convert output resolution to a downsample factor
+double pixelSize = imageData.getServer().getPixelCalibration().getAveragedPixelSize()
+double downsample = requestedPixelSize / pixelSize
+
+// Create an exporter that requests corresponding tiles from the original & labelled image servers
+new TileExporter(imageData)
+    .downsample(1)   // Define export resolution
+    .imageExtension('.tif')   // Define file extension for original pixels (often .tif, .jpg, '.png' or '.ome.tif')
+    .tileSize(256)            // Define size of each tile, in pixels
+    .annotatedTilesOnly(true) // If true, only export tiles if there is a (classified) annotation present
+    .overlap(50)              // Define overlap, in pixel units at the export resolution
+    .writeTiles(pathOutput)   // Write tiles to the specified directory
+
+print 'Done!'
+```
 ## Pre-processing Techniques
 Torchvision normalizing function:
 
