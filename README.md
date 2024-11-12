@@ -199,20 +199,10 @@ print("LightGBM Accuracy:", lgb_accuracy)
 accuracy = accuracy_score(y_test, lgb_predictions.argmax(axis=1))
 print('Accuracy:', accuracy)
 ```
-For more information, see the original study: [10.1101/2024.06.05.24308520](https://doi.org/10.1101/2024.06.05.24308520 ).
+For more information, please see the original study: [10.23750/abm.v95i5.16407](https://doi.org/10.23750/abm.v95i5.16407).
 
 If you wish to reuse any of the codes mentioned above, please ensure to cite the original manuscript accordingly.
 ```
-@article {Kussaibi2024.06.05.24308520,
-	author = {Kussaibi, Haitham and Alibrahim, Elaf and Alamer, Eman and Alhaji, Ghada and Alshehab, Shrooq and Shabib, Zahraa and Alsafwani, Noor and Meneses, Ritesh G.},
-	title = {Al-Powered classification of Ovarian cancers Based on Histopathological lmages},
-	elocation-id = {2024.06.05.24308520},
-	year = {2024},
-	doi = {10.1101/2024.06.05.24308520},
-	publisher = {Cold Spring Harbor Laboratory Press},
-	URL = {https://www.medrxiv.org/content/early/2024/06/06/2024.06.05.24308520},
-	eprint = {https://www.medrxiv.org/content/early/2024/06/06/2024.06.05.24308520.full.pdf},
-	journal = {medRxiv}
-}
+@article{Kussaibi_Alibrahim_Alamer_Al hajji_Alshehab_Shabib_Alsafwani_Menezes_2024, place={Fidenza, Italy}, title={A robust AI-pipeline for ovarian cancer classification on histopathology images}, volume={95},  url={https://mattioli1885journals.com/index.php/actabiomedica/article/view/16407},  DOI={10.23750/abm.v95i5.16407}, number={5}, journal={Acta Biomedica Atenei Parmensis}, author={Kussaibi, Haitham and Alibrahim , Elaf and Alamer, Eman and Al hajji, Ghadah and Alshehab , Shrooq and Shabib, Zahra and Alsafwani, Noor and Menezes, Ritesh G.}, year={2024}, month={Oct.}, pages={e2024176} }
 ```
 © 2024 anapath.org This code is made available under the Apache-2 License and is available for non-commercial academic purposes.
