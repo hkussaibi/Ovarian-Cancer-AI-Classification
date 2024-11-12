@@ -203,6 +203,15 @@ For more information, please see the original study: [10.23750/abm.v95i5.16407](
 
 If you wish to reuse any of the codes mentioned above, please ensure to cite the original manuscript accordingly.
 ```
-@article{Kussaibi_Alibrahim_Alamer_Al hajji_Alshehab_Shabib_Alsafwani_Menezes_2024, place={Fidenza, Italy}, title={A robust AI-pipeline for ovarian cancer classification on histopathology images}, volume={95},  url={https://mattioli1885journals.com/index.php/actabiomedica/article/view/16407},  DOI={10.23750/abm.v95i5.16407}, number={5}, journal={Acta Biomedica Atenei Parmensis}, author={Kussaibi, Haitham and Alibrahim , Elaf and Alamer, Eman and Al hajji, Ghadah and Alshehab , Shrooq and Shabib, Zahra and Alsafwani, Noor and Menezes, Ritesh G.}, year={2024}, month={Oct.}, pages={e2024176} }
+@article{Kussaibi_Alibrahim_Alamer_Al hajji_Alshehab_Shabib_Alsafwani_Menezes_2024,
+place={Fidenza, Italy},
+title={A robust AI-pipeline for ovarian cancer classification on histopathology images},
+volume={95},
+url={https://mattioli1885journals.com/index.php/actabiomedica/article/view/16407},
+DOI={10.23750/abm.v95i5.16407},
+number={5},
+journal={Acta Biomedica Atenei Parmensis},
+author={Kussaibi, Haitham and Alibrahim , Elaf and Alamer, Eman and Al hajji, Ghadah and Alshehab , Shrooq and Shabib, Zahra and Alsafwani, Noor and Menezes, Ritesh G.},
+year={2024}, month={Oct.}, pages={e2024176} }
 ```
 © 2024 anapath.org This code is made available under the Apache-2 License and is available for non-commercial academic purposes.
